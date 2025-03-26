@@ -1,77 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
 
-    <androidx.appcompat.widget.Toolbar
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#F3EAD7"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-        <!-- Thanh tìm kiếm -->
-        <EditText
-            android:id="@+id/edtSearch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Tìm kiếm sản phẩm..."
-            android:inputType="text"
-            android:background="@drawable/custom_edt"
-            android:padding="8dp"
-            android:textColorHint="#141212"
-            android:textColor="#0B0707" />
-    </androidx.appcompat.widget.Toolbar>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-
-        android:layout_marginTop="55dp"
-        android:src="@drawable/banner" />
-
-    <TextView
-        android:layout_marginTop="260dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Sản phẩm bán chạy"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-
-    <FrameLayout
-        android:id="@+id/frame_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/topNav"
-        android:layout_marginBottom="-26dp" />
-
-    <LinearLayout
-        android:id="@+id/topNav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="center">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#F5ECD9"
-            app:itemIconTint="@drawable/bottom_nav_color"
-            app:itemTextColor="@drawable/bottom_nav_color"
-            app:labelVisibilityMode="labeled"
-            app:menu="@menu/menu" />
-
-    </LinearLayout>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

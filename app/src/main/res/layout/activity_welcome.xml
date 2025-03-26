@@ -10,15 +10,8 @@
     android:background="#FBF6E8"
     tools:context=".Welcome">
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:src="@mipmap/logo_app"
         />
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Thời trang Fpoly"
-        android:textStyle="bold"
-        android:textSize="30sp"/>
 </LinearLayout>
